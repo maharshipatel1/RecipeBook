@@ -1,0 +1,15 @@
+header{
+    font-size: 16px;
+    font-size: 3vw;
+    text-align: center;
+    padding: 20px;
+}
+
+body{
+    font-size: 2vw;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    background-color: rgb(20, 190, 220);
+    color: rgb(22, 2, 2);
+    align-items: center;
+}
