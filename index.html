@@ -1,0 +1,54 @@
+<html>
+    <title>Recipe Book</title>
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+        <header>Find recipes from the ingredients!</header>
+    </head>
+    <body>
+        <h5>Please select any ingredients from below:</h5>
+        <input type="checkbox" id="i1" name="i1" value="Onions">
+        <label for="i1">Onions</label><br>
+        <input type="checkbox" id="i2" name="i2" value="Peppers">
+        <label for="i2">Green Peppers</label><br>
+        <input type="checkbox" id="i3" name="i3" value="Tomatoes">
+        <label for="i3">Tomatoes</label><br>
+        <input type="checkbox" id="i4" name="i4" value="BlackOlives">
+        <label for="i4">Black Olives</label><br>
+        <input type="checkbox" id="i5" name="i5" value="Panner">
+        <label for="i5">Paneer</label><br>
+        <input type="checkbox" id="i6" name="i6" value="Jalapenos">
+        <label for="i6">Jalapenos</label><br>
+        <input type="checkbox" id="i7" name="i7" value="MexicanCheese">
+        <label for="i7">Mexican Cheese</label><br>
+        <input type="checkbox" id="i8" name="i8" value="Beans">
+        <label for="i8">Beans</label><br>
+        <input type="checkbox" id="i9" name="i9" value="SpringOnions">
+        <label for="i3">Spring Onions</label><br>
+        <button type="button" id="submit" onclick="read(i3.value)">Submit</button>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+            apiKey: "AIzaSyBX8VxAnUDJuwY5CDoF65-NOJwQY-GgvSQ",
+            authDomain: "recipebook-d572f.firebaseapp.com",
+            databaseURL: "https://recipebook-d572f-default-rtdb.firebaseio.com",
+            projectId: "recipebook-d572f",
+            storageBucket: "recipebook-d572f.appspot.com",
+            messagingSenderId: "926776318508",
+            appId: "1:926776318508:web:848df3a5d6377c10f38f89"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        </script>
+
+        <script src="scripts/database.js"></script>
+    </body>
+</html>
